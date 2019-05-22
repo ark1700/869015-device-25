@@ -10,14 +10,15 @@
   <header class="header">
     <div class="header__logo">
       <a href="index.html" class="header__logo-link">
-        <img src="img/logo-device.svg" width="163" height="35" alt="Device лого">
+        <img src="img/logo-device.svg" width="163" height="35" alt="Device логотип">
       </a>
     </div>
 
     <nav class="navigation">
-      <div class="navigation__search">
-        <!-- search form -->
-      </div>
+      <form class="navigation__search form-search" method="GET" action="/">
+        <input class="form-search__input" type="text">
+        <button class="form-search__btn">Найти</button>
+      </form>
       <ul class="navigation__user">
         <li class="navigation__user-item">
           <a href="#" class="navigation__user-link">Валентин Петухов</a>
@@ -79,8 +80,71 @@
       </div>
     </div>
     <section class="filter">
-      <h2 class="filter__title">Фильтр:</h2>
+      <h2 class="filter__title visually-hidden">Фильтр:</h2>
       <!-- filter form -->
+      <form class="filter-form" method="GET" action="/">
+        <fieldset class="filter-form__set">
+          <legend class="filter-form__title">Стоимость</legend>
+          <div class="filter-form__slider slider">
+            <div class="slider__range"></div>
+            <div class="slider__handle-1"></div>
+            <div class="slider__handle-2"></div>
+          </div>
+        </fieldset>
+        <fieldset class="filter-form__set">
+          <legend class="filter-form__title">Цвет</legend>
+          <ul class="filter-form__list">
+            <li class="filter-form__item">
+              <label class="filter-form__label">
+                <input class="filter-form__checkbox visually-hidden" type="checkbox" name="color" value="black" checked>
+                Черный
+              </label>
+            </li>
+            <li class="filter-form__item">
+              <label class="filter-form__label">
+                <input class="filter-form__checkbox visually-hidden" type="checkbox" name="color" value="white">
+                Белый
+              </label>
+            </li>
+            <li class="filter-form__item">
+              <label class="filter-form__label">
+                <input class="filter-form__checkbox visually-hidden" type="checkbox" name="color" value="blue" checked>
+                Синий
+              </label>
+            </li>
+            <li class="filter-form__item">
+              <label class="filter-form__label">
+                <input class="filter-form__checkbox visually-hidden" type="checkbox" name="color" value="red" checked>
+                Красный
+              </label>
+            </li>
+            <li class="filter-form__item">
+              <label class="filter-form__label">
+                <input class="filter-form__checkbox visually-hidden" type="checkbox" name="color" value="pink">
+                Розовый
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter-form__set">
+          <legend class="filter-form__title">Bluetooth</legend>
+          <ul class="filter-form__list">
+            <li class="filter-form__item">
+              <label class="filter-form__label">
+                <input class="visually-hidden filter-form__checkbox" type="radio" name="bluetooth" value="yes">
+                Есть
+              </label>
+            </li>
+            <li class="filter-form__item">
+              <label class="filter-form__label">
+                <input class="visually-hidden filter-form__checkbox" type="radio" name="bluetooth" value="no">
+                Нет
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit" class="filter-form__btn btn">Показать</button>
+      </form>
     </section>
     <section class="catalog">
       <h2 class="visually-hidden">Список моноподов для селфи</h2>
@@ -99,7 +163,7 @@
       <ul class="catalog__list">
         <li class="catalog-item">
           <div class="catalog-item__img">
-            <img src="img/item-1.jpg" alt="Изображение товара">
+            <img src="img/item-1.jpg" alt="Любительская селфи-палка">
             <a href="#" class="catalog-item__basket">В корзину</a>
             <a href="#" class="catalog-item__compare">Добавить к сравнению</a>
           </div>
@@ -113,13 +177,13 @@
 
         <li class="catalog-item">
           <div class="catalog-item__img">
-            <img src="img/item-2.jpg" alt="Изображение товара">
+            <img src="img/item-2.jpg" alt="Профессиональная селфи-палка">
             <a href="#" class="catalog-item__basket">В корзину</a>
             <a href="#" class="catalog-item__compare">Добавить к сравнению</a>
           </div>
           <div class="catalog-item__descr">
             <h3 class="catalog-item__title">
-              <a href="#" class="catalog-item__link">Профессиональная селфи-палка </a>
+              <a href="#" class="catalog-item__link">Профессиональная селфи-палка</a>
             </h3>
             <span class="catalog-item__price">1 500 руб.</span>
           </div>
@@ -127,7 +191,7 @@
 
         <li class="catalog-item">
           <div class="catalog-item__img">
-            <img src="img/item-3.jpg" alt="Изображение товара">
+            <img src="img/item-3.jpg" alt="Непотопляемая селфи-палка">
             <a href="#" class="catalog-item__basket">В корзину</a>
             <a href="#" class="catalog-item__compare">Добавить к сравнению</a>
           </div>
@@ -141,7 +205,7 @@
 
         <li class="catalog-item">
           <div class="catalog-item__img">
-            <img src="img/item-4.jpg" alt="Изображение товара">
+            <img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»">
             <a href="#" class="catalog-item__basket">В корзину</a>
             <a href="#" class="catalog-item__compare">Добавить к сравнению</a>
           </div>
@@ -169,7 +233,7 @@
     <div class="footer__wrap">
       <div class="footer__row">
         <div class="footer__logo">
-          <img src="img/logo-device.svg" alt="Device лого" width="163" height="35">
+          <img src="img/logo-device.svg" alt="Device логотип" width="163" height="35">
         </div>
         <div class="footer__user-nav">
           <ul class="footer-navigation__user">
@@ -216,7 +280,7 @@
           <li class="footer__social-item"><a href="#" class="footer__social-link footer__social-link--twitter">twitter</a></li>
         </ul>
         <a href="https://htmlacademy.ru/" class="footer__html-academy">
-          <img src="img/logo-html.svg" alt="Лого HTML Academy">
+          <img src="img/logo-html.svg" alt="Логотип HTML Academy">
         </a>
       </div>
     </div>
