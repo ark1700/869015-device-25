@@ -15,9 +15,10 @@
     </div>
 
     <nav class="navigation">
-      <form class="navigation__search form-search" method="GET" action="/">
-        <input class="form-search__input" type="text">
-        <button class="form-search__btn">Найти</button>
+      <form class="navigation__search form-search" method="GET" action="https://echo.htmlacademy.ru">
+        <label for="search-form" class="form-search__label visibility-hidden">Поиск</label>
+        <input class="form-search__input" id="search-form" type="text" placeholder="Поиск по сайту" required>
+        <button type="submit" class="form-search__btn">Найти</button>
       </form>
       <ul class="navigation__user">
         <li class="navigation__user-item">
@@ -81,8 +82,7 @@
     </div>
     <section class="filter">
       <h2 class="filter__title visually-hidden">Фильтр:</h2>
-      <!-- filter form -->
-      <form class="filter-form" method="GET" action="/">
+      <form class="filter-form" method="GET" action="https://echo.htmlacademy.ru">
         <fieldset class="filter-form__set">
           <legend class="filter-form__title">Стоимость</legend>
           <div class="filter-form__slider slider">
@@ -131,7 +131,7 @@
           <ul class="filter-form__list">
             <li class="filter-form__item">
               <label class="filter-form__label">
-                <input class="visually-hidden filter-form__checkbox" type="radio" name="bluetooth" value="yes">
+                <input class="visually-hidden filter-form__checkbox" type="radio" name="bluetooth" value="yes" checked>
                 Есть
               </label>
             </li>
