@@ -274,33 +274,30 @@
             <img src="img/map.png" alt="г. Москва, ул. Строителей, 15" width="560" height="222">
           </div>
           <a href="#" class="contact__btn btn">Напишите нам</a>
-          <div class="contact-form">
+          <section class="contact-form">
             <div class="contact-form__wrap">
-              <form action="https://echo.htmlacademy.ru" class="contact-form__form">
-                <fieldset class="contact-form__set">
-                  <legend class="contact-form__set visibility-hidden">Обратная связь</legend>
-                  <div class="contact-form__row">
-                    <label class="contact-form__label">
-                      Ваше имя:
-                      <input type="text" class="contact-form__input" name="name" placeholder="Имя Фамилия" required>
-                    </label>
-                    <label class="contact-form__label">
-                      Ваш e-mail:
-                      <input type="text" class="contact-form__input" name="email" placeholder="email@example.com"
-                        required>
-                    </label>
-                  </div>
+              <form action="https://echo.htmlacademy.ru" method="POST" class="contact-form__form">
+                <h2 class="contact-form__set visibility-hidden">Обратная связь</h2>
+                <div class="contact-form__row">
                   <label class="contact-form__label">
-                    Информация о себе:
-                    <br>
-                    <textarea placeholder="В свободной форме" name="text" required></textarea>
+                    Ваше имя:
+                    <input type="text" class="contact-form__input" name="name" placeholder="Имя Фамилия" required>
                   </label>
-                  <button type="submit" class="contact-form__btn btn">Отправить</button>
-                </fieldset>
+                  <label class="contact-form__label">
+                    Ваш e-mail:
+                    <input type="text" class="contact-form__input" name="email" placeholder="email@example.com"
+                      required>
+                  </label>
+                </div>
+                <label class="contact-form__label">
+                  Информация о себе:
+                  <textarea placeholder="В свободной форме" name="text" required></textarea>
+                </label>
+                <button type="submit" class="contact-form__btn btn">Отправить</button>
               </form>
               <button class="contact-form__close">Закрыть</button>
             </div>
-          </div>
+          </section>
           <div class="popup-map">
             <img src="img/map-big.png" alt="г. Москва, ул. Строителей, 15" class="popup-map__img">
             <button class="popup-map__close">Закрыть</button>
