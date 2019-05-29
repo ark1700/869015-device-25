@@ -9,7 +9,7 @@
   <body>
     <header class="header">
       <div class="header__logo">
-        <a class="header__logo-link">
+        <a class="header__logo-link header-link">
           <img src="img/logo-device.svg" width="163" height="35" alt="Device логотип">
         </a>
       </div>
@@ -23,45 +23,46 @@
           </form>
           <ul class="navigation__user">
             <li class="navigation__user-item">
-              <a href="#" class="navigation__login-link">Войти</a>
+              <a href="#" class="navigation__login-link  header-link">Войти</a>
             </li>
           </ul>
           <ul class="navigation__shop">
             <li class="navigation__shop-item">
-              <a href="#" class="navigation__compare-link">Сравнить</a>
+              <a href="#" class="navigation__compare-link  header-link">Сравнить</a>
             </li>
             <li class="navigation__shop-item">
-              <a href="#" class="navigation__basket-link">Корзина</a>
+              <a href="#" class="navigation__basket-link  header-link">Корзина</a>
             </li>
           </ul>
         </div>
         <div class="navigation__row">
           <ul class="navigation__secondary">
             <li class="navigation__secondary-item catalog-list">
-              <a href="catalog.html" class="catalog-list__link catalog-list__link--main">Каталог товаров</a>
+              <a href="catalog.html" class="catalog-list__link catalog-list__link--main  header-link">Каталог
+                товаров</a>
               <div class="catalog-list__inner">
                 <ul class="catalog-list__list">
-                  <li class="catalog-list__item"><a class="catalog-list__link" href="#">Виртуальная реальность</a></li>
-                  <li class="catalog-list__item"><a class="catalog-list__link" href="#">Моноподы для селфи</a></li>
-                  <li class="catalog-list__item"><a class="catalog-list__link" href="#">Экшн-камеры</a></li>
+                  <li class="catalog-list__item"><a class="catalog-list__link header-link" href="#">Виртуальная реальность</a></li>
+                  <li class="catalog-list__item"><a class="catalog-list__link header-link" href="#">Моноподы для селфи</a></li>
+                  <li class="catalog-list__item"><a class="catalog-list__link header-link" href="#">Экшн-камеры</a></li>
                 </ul>
                 <ul class="catalog-list__list">
-                  <li class="catalog-list__item"><a class="catalog-list__link" href="#">Фитнес-браслеты</a></li>
-                  <li class="catalog-list__item"><a class="catalog-list__link" href="#">Умные часы</a></li>
+                  <li class="catalog-list__item"><a class="catalog-list__link header-link" href="#">Фитнес-браслеты</a></li>
+                  <li class="catalog-list__item"><a class="catalog-list__link header-link" href="#">Умные часы</a></li>
                 </ul>
                 <ul class="catalog-list__list">
-                  <li class="catalog-list__item"><a class="catalog-list__link" href="#">Квадрокоптеры</a></li>
+                  <li class="catalog-list__item"><a class="catalog-list__link header-link" href="#">Квадрокоптеры</a></li>
                 </ul>
               </div>
             </li>
             <li class="navigation__secondary-item">
-              <a class="navigation__secondary-link" href="#">Доставка</a>
+              <a class="navigation__secondary-link  header-link" href="#">Доставка</a>
             </li>
             <li class="navigation__secondary-item">
-              <a class="navigation__secondary-link" href="#">Гарантия</a>
+              <a class="navigation__secondary-link  header-link" href="#">Гарантия</a>
             </li>
             <li class="navigation__secondary-item">
-              <a class="navigation__secondary-link" href="#">Контакты</a>
+              <a class="navigation__secondary-link  header-link" href="#">Контакты</a>
             </li>
           </ul>
         </div>
@@ -82,15 +83,15 @@
                 длиной и весом всего 5 килограмм.</p>
               <a href="#" class="promo-slider__btn btn">Подробнее</a>
               <table class="promo-slider__table slider-table">
-                <tr class="slider-table__first-row">
+                <tr class="slider-table__row">
                   <td class="slider-table__cell">8,5 м</td>
                   <td class="slider-table__cell">5 кг</td>
                   <td class="slider-table__cell">Карбон</td>
                 </tr>
-                <tr class="slider-table__second-row">
-                  <td class="slider-table__cell">Длина палки</td>
-                  <td class="slider-table__cell">Вес палки</td>
-                  <td class="slider-table__cell">Материал</td>
+                <tr class="slider-table__row">
+                  <td class="slider-table__cell--sm">Длина палки</td>
+                  <td class="slider-table__cell--sm">Вес палки</td>
+                  <td class="slider-table__cell--sm">Материал</td>
                 </tr>
               </table>
             </div>
@@ -261,10 +262,10 @@
           <div class="info__text">
             <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
             <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-            <ul>
-              <li>Деловые Линии</li>
-              <li>Автотрейдинг</li>
-              <li>ЖелДорЭкспедиция</li>
+            <ul class="info__list">
+              <li class="info__item">Деловые Линии</li>
+              <li class="info__item">Автотрейдинг</li>
+              <li class="info__item">ЖелДорЭкспедиция</li>
             </ul>
           </div>
           <a href="#" class="info__btn btn">Подробнее о нас</a>
@@ -310,21 +311,21 @@
     <footer class="footer">
       <div class="footer__wrap">
         <div class="footer__row">
-          <div class="footer__logo">
+          <div class="footer__logo footer-link">
             <img src="img/logo-device-y.svg" alt="Device логотип" width="163" height="35">
           </div>
           <div class="footer__user-nav">
             <ul class="footer-navigation__user">
               <li class="footer-navigation__user-item">
-                <a href="#" class="footer-navigation__login-link">Войти</a>
+                <a href="#" class="footer-navigation__login-link footer-link--light">Войти</a>
               </li>
             </ul>
             <ul class="footer-navigation__shop">
               <li class="footer-navigation__shop-item">
-                <a href="#" class="footer-navigation__compare-link">Сравнить</a>
+                <a href="#" class="footer-navigation__compare-link footer-link--light">Сравнить</a>
               </li>
               <li class="footer-navigation__shop-item">
-                <a href="#" class="footer-navigation__basket-link">Корзина</a>
+                <a href="#" class="footer-navigation__basket-link footer-link--light">Корзина</a>
               </li>
             </ul>
           </div>
@@ -336,25 +337,25 @@
           </p>
           <ul class="footer-navigation__secondary">
             <li class="footer-navigation__secondary-item">
-              <a class="footer-navigation__secondary-link" href="#">Доставка</a>
+              <a class="footer-navigation__secondary-link footer-link" href="#">Доставка</a>
             </li>
             <li class="footer-navigation__secondary-item">
-              <a class="footer-navigation__secondary-link" href="#">Гарантия</a>
+              <a class="footer-navigation__secondary-link footer-link" href="#">Гарантия</a>
             </li>
             <li class="footer-navigation__secondary-item">
-              <a class="footer-navigation__secondary-link" href="#">Контакты</a>
+              <a class="footer-navigation__secondary-link footer-link" href="#">Контакты</a>
             </li>
           </ul>
-          <a href="tel:+74954959595" class="footer__tel">Тел.: +7 (495) 495-95-95</a>
+          <a href="tel:+74954959595" class="footer__tel footer-link">Тел.: +7 (495) 495-95-95</a>
         </div>
         <!-- end second row -->
         <div class="footer__row">
           <ul class="footer__social">
-            <li><a href="#" class="footer__social-link footer__social-link--facebook">facebook</a></li>
-            <li><a href="#" class="footer__social-link footer__social-link--instagram">instagram</a></li>
-            <li><a href="#" class="footer__social-link footer__social-link--twitter">twitter</a></li>
+            <li><a href="#" class="footer__social-link footer__social-link--facebook footer-link--light">facebook</a></li>
+            <li><a href="#" class="footer__social-link footer__social-link--instagram footer-link--light">instagram</a></li>
+            <li><a href="#" class="footer__social-link footer__social-link--twitter footer-link--light">twitter</a></li>
           </ul>
-          <a href="https://htmlacademy.ru/" class="footer__html-academy">
+          <a href="https://htmlacademy.ru/" class="footer__html-academy footer-link">
             <img src="img/logo-html.svg" width="27" height="34" alt="Логотип HTML Academy">
           </a>
         </div>

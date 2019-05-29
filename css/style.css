@@ -28,7 +28,7 @@
 }
 
 body {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -51,7 +51,7 @@ a {
 /* Title */
 .title {
   color: #000;
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 47px;
   font-weight: 800;
   line-height: 48px;
@@ -59,12 +59,13 @@ a {
 }
 /* Button */
 .btn {
+  display: inline-block;
   position: relative;
   padding: 14px 25px;
   background-color: transparent;
   border: none;
   color: #000000;
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
@@ -109,12 +110,14 @@ a {
 }
 .form-search__input:focus + .form-search__btn {
   opacity: 1;
+  pointer-events: auto;
 }
 .form-search__btn {
   opacity: 0;
   border: 2px solid #000000;
   background-color: transparent;
   font: inherit;
+  pointer-events: none;
 }
 .form-search__btn:hover,
 .form-search__btn:focus {
@@ -133,57 +136,20 @@ a {
 .header {
   background-color: rgba(240, 197, 46, 0.5);
 }
-.header__logo-link,
-.navigation__login-link,
-.navigation__logout-link,
-.navigation__user-link,
-.navigation__compare-link,
-.navigation__basket-link,
-.catalog-list__link,
-.navigation__secondary-link
+.header-link
  {
   color: #000000;
 }
-.header__logo-link:hover,
-.header__logo-link:focus,
-.navigation__login-link:hover,
-.navigation__login-link:focus,
-.navigation__logout-link:hover,
-.navigation__logout-link:focus,
-.navigation__user-link:hover,
-.navigation__user-link:focus,
-.navigation__compare-link:hover,
-.navigation__compare-link:focus,
-.navigation__basket-link:hover,
-.navigation__basket-link:focus,
-.catalog-list__link:hover,
-.catalog-list__link:hover,
-.navigation__secondary-link:hover,
-.navigation__secondary-link:focus,
-.navigation__user-link:hover,
-.navigation__user-link:focus,
-.navigation__compare-link:hover,
-.navigation__compare-link:focus,
-.navigation__basket-link:hover,
-.navigation__basket-link:focus,
-.catalog-list__link:hover,
-.catalog-list__link:focus,
-.navigation__secondary-link:hover,
-.navigation__secondary-link:focus {
+.header-link:hover,
+.header-link:focus{
   opacity: 0.6;
 }
-.header__logo-link:active,
-.navigation__login-link:active,
-.navigation__user-link:active,
-.navigation__compare-link:active,
-.navigation__basket-link:active,
-.catalog-list__link:active,
-.navigation__secondary-link:active {
+.header-link:active{
   opacity: 0.3;
 }
 .catalog-list__link--main,
 .navigation__secondary-link {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
@@ -206,7 +172,7 @@ a {
 /* Promo */
 .promo-slider__number {
   color: #ffffff;
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 179px;
   font-weight: 800;
   line-height: 179.2px;
@@ -214,39 +180,39 @@ a {
 }
 .promo-slider__header {
   color: #000000;
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 47px;
   font-weight: 800;
   line-height: 56px;
   letter-spacing: 0.17px;
 }
 
-.slider-table__first-row .slider-table__cell {
+.slider-table__cell {
   color: #000000;
-  font-family: 'Gilroy';
+  font-family: 'Gilroy', "Tahoma", sans-serif;
   font-size: 36px;
   font-weight: 300;
   line-height: 48px;
   letter-spacing: 0.36px;
 }
-.slider-table__second-row .slider-table__cell {
+.slider-table__cell--sm {
   font-size: 13px;
   font-weight: 300;
   line-height: 20px;
   letter-spacing: 0.13px;
 }
-.info__text ul{
+.info__list{
   list-style: none;
   color: #000000;
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 40px;
 }
-.info__text li {
+.info__item{
   position: relative;
-}
-.info__text li:before {
+}s
+.info__item:before {
   content: '';
   position: absolute;
   left: -35px;
@@ -263,60 +229,32 @@ a {
   background-color: #464646;
   color: #ffffff;
 }
-.footer__logo,
-.footer-navigation__secondary-link,
-.footer__tel {
+.footer-link {
   color: #ffffff;
 }
-.footer__logo:hover,
-.footer__logo:focus,
-.footer__tel:hover,
-.footer__tel:focus,
-.footer-navigation__secondary-link:hover,
-.footer-navigation__secondary-link:focus,
-.footer__html-academy:hover,
-.footer__html-academy:focus {
+.footer-link:hover,
+.footer-link:focus {
   opacity: 0.6;
 }
-.footer__logo:active,
-.footer__tel:hover,
-.footer-navigation__secondary-link:active,
-.footer__html-academy:active {
+.footer-link:active {
   opacity: 0.3;
 }
 
-.footer-navigation__user-link,
-.footer-navigation__login-link,
-.footer-navigation__logout-link,
-.footer-navigation__basket-link,
-.footer-navigation__compare-link,
-.footer__social-link {
+.footer-link--light
+{
   opacity: 0.7;
   color: #ffffff;
 }
 
-.footer-navigation__user-link:hover,
-.footer-navigation__user-link:focus,
-.footer-navigation__login-link:hover,
-.footer-navigation__login-link:focus,
-.footer-navigation__logout-link:hover,
-.footer-navigation__logout-link:focus,
-.footer-navigation__basket-link:hover,
-.footer-navigation__basket-link:focus,
-.footer-navigation__compare-link:hover,
-.footer-navigation__compare-link:focus,
-.footer__social-link:hover,
-.footer__social-link:focus {
+.footer-link--light:hover,
+.footer-link--light:focus {
   opacity: 1;
 }
-.footer-navigation__user-link:active,
-.footer-navigation__logout-link:active,
-.footer-navigation__basket-link:active,
-.footer__social-link:active {
+.footer-link--light:active {
   opacity: 0.3;
 }
 .footer-navigation__secondary-link {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
@@ -337,7 +275,7 @@ a {
 }
 .contact-form__label {
   color: #000000;
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
@@ -372,7 +310,7 @@ a {
 /* filter-form */
 .filter-form__title {
   color: #000000;
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
@@ -383,7 +321,6 @@ a {
 }
 .filter-form__label {
   color: #000000;
-  font-family: "Open Sans";
   font-size: 14px;
   font-weight: 300;
   line-height: 40px;
@@ -399,7 +336,7 @@ a {
 }
 .catalog-item__link {
   color: #000000;
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
@@ -407,7 +344,7 @@ a {
 }
 .catalog-item__price {
   color: #464646;
-  font-family: Gilroy;
+  font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
@@ -429,4 +366,3 @@ a {
 .catalog-item__compare:active {
   opacity: 0.2;
 }
-
