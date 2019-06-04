@@ -8,65 +8,70 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__logo">
-        <a class="header__logo-link header-link">
-          <img src="img/logo-device.svg" width="163" height="35" alt="Device логотип">
-        </a>
+      <div class="header__wrap">
+        <div class="header__logo">
+          <a class="header__logo-link header-link">
+            <img src="img/logo-device.svg" width="163" height="35" alt="Device логотип">
+          </a>
+        </div>
+        
+        <nav class="navigation">
+          <div class="navigation__row">
+            <form class="navigation__search form-search" method="GET" action="https://echo.htmlacademy.ru">
+              <label for="search-form" class="form-search__label visually-hidden">Поиск</label>
+              <input class="form-search__input" id="search-form" type="text" name="search" placeholder="Поиск по сайту"
+                required>
+              <button type="submit" class="form-search__btn">Найти</button>
+            </form>
+            <ul class="navigation__user">
+              <li class="navigation__user-item">
+                <a href="#" class="navigation__login-link  header-link">Войти</a>
+              </li>
+            </ul>
+            <ul class="navigation__shop">
+              <li class="navigation__shop-item">
+                <a href="#" class="navigation__compare-link  header-link">Сравнить</a>
+              </li>
+              <li class="navigation__shop-item">
+                <a href="#" class="navigation__basket-link  header-link">Корзина</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navigation__row">
+            <ul class="navigation__secondary">
+              <li class="navigation__secondary-item catalog-list">
+                <a href="catalog.html" class="catalog-list__link catalog-list__link--main  header-link">Каталог
+                  товаров</a>
+                <div class="catalog-list__inner">
+                  <ul class="catalog-list__list">
+                    <li class="catalog-list__item"><a class="catalog-list__link header-link" href="#">Виртуальная реальность</a>
+                    </li>
+                    <li class="catalog-list__item"><a class="catalog-list__link header-link" href="#">Моноподы для селфи</a>
+                    </li>
+                    <li class="catalog-list__item"><a class="catalog-list__link header-link" href="#">Экшн-камеры</a></li>
+                  </ul>
+                  <ul class="catalog-list__list">
+                    <li class="catalog-list__item"><a class="catalog-list__link header-link" href="#">Фитнес-браслеты</a></li>
+                    <li class="catalog-list__item"><a class="catalog-list__link header-link" href="#">Умные часы</a></li>
+                  </ul>
+                  <ul class="catalog-list__list">
+                    <li class="catalog-list__item"><a class="catalog-list__link header-link" href="#">Квадрокоптеры</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="navigation__secondary-item">
+                <a class="navigation__secondary-link  header-link" href="#">Доставка</a>
+              </li>
+              <li class="navigation__secondary-item">
+                <a class="navigation__secondary-link  header-link" href="#">Гарантия</a>
+              </li>
+              <li class="navigation__secondary-item">
+                <a class="navigation__secondary-link  header-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-
-      <nav class="navigation">
-        <div class="navigation__row">
-          <form class="navigation__search form-search" method="GET" action="https://echo.htmlacademy.ru">
-            <label for="search-form" class="form-search__label visibility-hidden">Поиск</label>
-            <input class="form-search__input" id="search-form" type="text" name="search" placeholder="Поиск по сайту" required>
-            <button type="submit" class="form-search__btn">Найти</button>
-          </form>
-          <ul class="navigation__user">
-            <li class="navigation__user-item">
-              <a href="#" class="navigation__login-link  header-link">Войти</a>
-            </li>
-          </ul>
-          <ul class="navigation__shop">
-            <li class="navigation__shop-item">
-              <a href="#" class="navigation__compare-link  header-link">Сравнить</a>
-            </li>
-            <li class="navigation__shop-item">
-              <a href="#" class="navigation__basket-link  header-link">Корзина</a>
-            </li>
-          </ul>
-        </div>
-        <div class="navigation__row">
-          <ul class="navigation__secondary">
-            <li class="navigation__secondary-item catalog-list">
-              <a href="catalog.html" class="catalog-list__link catalog-list__link--main  header-link">Каталог
-                товаров</a>
-              <div class="catalog-list__inner">
-                <ul class="catalog-list__list">
-                  <li class="catalog-list__item"><a class="catalog-list__link header-link" href="#">Виртуальная реальность</a></li>
-                  <li class="catalog-list__item"><a class="catalog-list__link header-link" href="#">Моноподы для селфи</a></li>
-                  <li class="catalog-list__item"><a class="catalog-list__link header-link" href="#">Экшн-камеры</a></li>
-                </ul>
-                <ul class="catalog-list__list">
-                  <li class="catalog-list__item"><a class="catalog-list__link header-link" href="#">Фитнес-браслеты</a></li>
-                  <li class="catalog-list__item"><a class="catalog-list__link header-link" href="#">Умные часы</a></li>
-                </ul>
-                <ul class="catalog-list__list">
-                  <li class="catalog-list__item"><a class="catalog-list__link header-link" href="#">Квадрокоптеры</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="navigation__secondary-item">
-              <a class="navigation__secondary-link  header-link" href="#">Доставка</a>
-            </li>
-            <li class="navigation__secondary-item">
-              <a class="navigation__secondary-link  header-link" href="#">Гарантия</a>
-            </li>
-            <li class="navigation__secondary-item">
-              <a class="navigation__secondary-link  header-link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
     </header>
 
     <main>
@@ -260,8 +265,8 @@
         <section class="info">
           <h2 class="title">О нас</h2>
           <div class="info__text">
-            <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-            <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+            <p class="info__paragraph">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+            <p class="info__paragraph">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
             <ul class="info__list">
               <li class="info__item">Деловые Линии</li>
               <li class="info__item">Автотрейдинг</li>
@@ -311,9 +316,9 @@
     <footer class="footer">
       <div class="footer__wrap">
         <div class="footer__row">
-          <div class="footer__logo footer-link">
+          <a class="footer__logo footer-link" href="#">
             <img src="img/logo-device-y.svg" alt="Device логотип" width="163" height="35">
-          </div>
+          </a>
           <div class="footer__user-nav">
             <ul class="footer-navigation__user">
               <li class="footer-navigation__user-item">
