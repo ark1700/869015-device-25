@@ -27,7 +27,7 @@
           </form>
           <ul class="navigation__user">
             <li class="navigation__user-item">
-              <a href="#" class="navigation__user-link header-link">Валентин Петухов</a>
+              <a href="#" class="navigation__login-link header-link">Валентин Петухов</a>
             </li>
             <li class="navigation__user-item">
               <a href="#" class="navigation__logout-link header-link">Выйти</a>
@@ -95,48 +95,73 @@
       </div>
     </div>
     <div class="content">
+      <div class="content__top">
+        <div class="content__top-wrap">
+          <h2 class="filter__title">Фильтр:</h2>
+          <div class="catalog__sort sort">
+            <h3 class="sort__title">Сортировка:</h3>
+            <ul class="sort__list">
+              <li class="sort__item"><a href="#" class="sort__btn sort__btn--active">По цене</a></li>
+              <li class="sort__item"><a href="#" class="sort__btn">По типу</a></li>
+              <li class="sort__item"><a href="#" class="sort__btn">По популярности</a></li>
+            </ul>
+            <div class="sort__order">
+              <a href="#" class="sort__btn sort__btn--asc ">По возрастанию</a>
+              <a href="#" class="sort__btn sort__btn--desc sort__btn--active">По убыванию</a>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="content__wrap">
         <section class="filter">
-          <h2 class="filter__title">Фильтр:</h2>
           <form class="filter-form" method="GET" action="https://echo.htmlacademy.ru">
             <fieldset class="filter-form__set">
               <legend class="filter-form__title">Стоимость</legend>
               <div class="filter-form__slider slider">
-                <div class="slider__range"></div>
-                <div class="slider__handle-1"></div>
-                <div class="slider__handle-2"></div>
+                <!-- <div class="slider__controls">
+                  <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                  <label class="max-price">до <input type="text" name="max-price" value="5000"></label>
+                </div>
+                <div class="slider__range">
+                  <div class="slider__scale">
+                    <div class="slider__bar"></div>
+                  </div>
+                  <div class="slider__range-toggle slider__range-toggle--min"></div>
+                  <div class="slider__range-toggle slider__range-toggle--max"></div>
+                </div> -->
               </div>
             </fieldset>
             <fieldset class="filter-form__set">
               <legend class="filter-form__title">Цвет</legend>
               <ul class="filter-form__list">
                 <li class="filter-form__item">
-                  <label class="filter-form__label">
-                    <input class="filter-form__checkbox visually-hidden" type="checkbox" name="color" value="black" checked>
+                  <input class="filter-form__checkbox visually-hidden" id="filter-black" type="checkbox" name="color" value="black"
+                    checked>
+                  <label class="filter-form__label" for="filter-black">
                     Черный
                   </label>
                 </li>
                 <li class="filter-form__item">
-                  <label class="filter-form__label">
-                    <input class="filter-form__checkbox visually-hidden" type="checkbox" name="color" value="white">
+                  <input class="filter-form__checkbox visually-hidden" id="filter-white" type="checkbox" name="color" value="white">
+                  <label class="filter-form__label" for="filter-white">
                     Белый
                   </label>
                 </li>
                 <li class="filter-form__item">
-                  <label class="filter-form__label">
-                    <input class="filter-form__checkbox visually-hidden" type="checkbox" name="color" value="blue" checked>
+                  <input class="filter-form__checkbox visually-hidden" id="filter-blue" type="checkbox" name="color" value="blue" checked>
+                  <label class="filter-form__label" for="filter-blue">
                     Синий
                   </label>
                 </li>
                 <li class="filter-form__item">
-                  <label class="filter-form__label">
-                    <input class="filter-form__checkbox visually-hidden" type="checkbox" name="color" value="red" checked>
+                  <input class="filter-form__checkbox visually-hidden" id="filter-red" type="checkbox" name="color" value="red" checked>
+                  <label class="filter-form__label" for="filter-red">
                     Красный
                   </label>
                 </li>
                 <li class="filter-form__item">
-                  <label class="filter-form__label filter-form__label--blocked">
-                    <input class="filter-form__checkbox visually-hidden" type="checkbox" name="color" value="pink">
+                  <input class="filter-form__checkbox visually-hidden" id="filter-pink" type="checkbox" name="color" value="pink" disabled>
+                  <label class="filter-form__label" for="filter-pink">
                     Розовый
                   </label>
                 </li>
@@ -146,14 +171,15 @@
               <legend class="filter-form__title">Bluetooth</legend>
               <ul class="filter-form__list">
                 <li class="filter-form__item">
-                  <label class="filter-form__label">
-                    <input class="visually-hidden filter-form__checkbox" type="radio" name="bluetooth" value="yes" checked>
+                  <input class="visually-hidden filter-form__radio" id="filter-bluetooth-yes" type="radio" name="bluetooth" value="yes"
+                    checked>
+                  <label class="filter-form__label" for="filter-bluetooth-yes">
                     Есть
                   </label>
                 </li>
                 <li class="filter-form__item">
-                  <label class="filter-form__label">
-                    <input class="visually-hidden filter-form__checkbox" type="radio" name="bluetooth" value="no">
+                  <input class="visually-hidden filter-form__radio" id="filter-bluetooth-no" type="radio" name="bluetooth" value="no">
+                  <label class="filter-form__label" for="filter-bluetooth-no">
                     Нет
                   </label>
                 </li>
@@ -164,18 +190,6 @@
         </section>
         <section class="catalog">
           <h2 class="visually-hidden">Список моноподов для селфи</h2>
-          <div class="catalog__sort sort">
-            <h3 class="sort__title">Сортировка:</h3>
-            <ul class="sort__list">
-              <li class="sort__item"><a href="#" class="sort__btn sort__btn--active">По цене</a></li>
-              <li class="sort__item"><a href="#" class="sort__btn">По типу</a></li>
-              <li class="sort__item"><a href="#" class="sort__btn">По популярности</a></li>
-            </ul>
-            <div class="sort__order">
-              <a href="#" class="sort__btn">По возрастанию</a>
-              <a href="#" class="sort__btn sort__btn--active">По убыванию</a>
-            </div>
-          </div>
           <ul class="catalog__list">
             <li class="catalog-item">
               <div class="catalog-item__img">
@@ -235,11 +249,11 @@
           </ul>
           <div class="pagination">
             <ul class="pagination__list">
-              <li class="pagination__prev" ><a href="#" class="pagination__link" >Назад</a></li>
+              <li class="pagination__prev"><a href="#" class="pagination__link pagination__link-aside">Назад</a></li>
               <li><a href="#" class="pagination__link pagination__link--current">1</a></li>
               <li><a href="#" class="pagination__link">2</a></li>
               <li><a href="#" class="pagination__link">3</a></li>
-              <li class="pagination__next"><a href="#" class="pagination__link">Вперед</a></li>
+              <li class="pagination__next"><a href="#" class="pagination__link pagination__link-aside">Вперед</a></li>
             </ul>
           </div>
         </section>
@@ -256,7 +270,7 @@
         <div class="footer__user-nav">
           <ul class="footer-navigation__user">
             <li class="footer-navigation__user-item">
-              <a href="#" class="footer-navigation__user-link footer-link--light">Валентин Петухов</a>
+              <a href="#" class="footer-navigation__login-link footer-link--light">Валентин Петухов</a>
             </li>
             <li class="footer-navigation__user-item">
               <a href="#" class="footer-navigation__logout-link footer-link--light">Выйти</a>
@@ -297,7 +311,7 @@
           <li class="footer__social-item"><a href="#" class="footer__social-link footer__social-link--instagram footer-link--light">instagram</a></li>
           <li class="footer__social-item"><a href="#" class="footer__social-link footer__social-link--twitter footer-link--light">twitter</a></li>
         </ul>
-        <a href="https://htmlacademy.ru/" class="footer-navigation__secondary-link footer-link">
+        <a href="https://htmlacademy.ru/" class="footer__html-academy footer-link">
           <img src="img/logo-html.svg" alt="Логотип HTML Academy" width="27" height="34">
         </a>
       </div>
