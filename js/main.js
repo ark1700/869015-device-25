@@ -5,10 +5,10 @@ var contactLogin = contactModal.querySelector("[name=name]");
 var contactEmail = contactModal.querySelector("[name=email]");
 var contactText = contactModal.querySelector(".contact-form__textarea");
 var contactForm = contactModal.querySelector(".contact-form__form");
+var contactSubmit = contactModal.querySelector(".contact-form__btn");
 var mapModal = document.querySelector(".popup-map");
 var mapBtn = document.querySelector(".contact__map");
 var mapClose = document.querySelector(".popup-map__close");
-
 
 contactBtn.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -20,7 +20,7 @@ contactClose.addEventListener("click", function (evt) {
   contactModal.classList.remove("modal-show");
   contactModal.classList.remove("modal-error");
 });
-contactForm.addEventListener("submit", function (evt) {
+contactSubmit.addEventListener("click", function (evt) {
   if (!contactLogin.value || !contactEmail.value || !contactText.value) {
     evt.preventDefault();
     contactModal.classList.remove("modal-error");

@@ -345,16 +345,16 @@
         <div class="contact-form__row">
           <label class="contact-form__label">
             Ваше имя:
-            <input type="text" class="contact-form__input" name="name" placeholder="Имя Фамилия">
+            <input type="text" class="contact-form__input" name="name" placeholder="Имя Фамилия" required>
           </label>
           <label class="contact-form__label">
             Ваш e-mail:
-            <input type="text" class="contact-form__input" name="email" placeholder="email@example.com">
+            <input type="email" class="contact-form__input" name="email" placeholder="email@example.com" required>
           </label>
         </div>
         <label class="contact-form__label">
           Текст письма:
-          <textarea class="contact-form__textarea" placeholder="В свободной форме" name="text" rows="7"></textarea>
+          <textarea class="contact-form__textarea" placeholder="В свободной форме" name="text" rows="7" required></textarea>
         </label>
         <button type="submit" class="contact-form__btn btn">Отправить</button>
       </form>
