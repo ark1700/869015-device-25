@@ -122,8 +122,16 @@
                   <div class="slider__scale">
                     <div class="slider__bar"></div>
                   </div>
-                  <div class="slider__range-toggle slider__range-toggle--min"></div>
-                  <div class="slider__range-toggle slider__range-toggle--max"></div>
+                  <div class="slider__range-toggle slider__range-toggle--min">
+                    <label class="slider__label">
+                      от <input type="text" class="slider__input" value="0">
+                    </label>
+                  </div>
+                  <div class="slider__range-toggle slider__range-toggle--max">
+                    <label class="slider__label slider__label--max">
+                      до <input type="text" class="slider__input" value="5000">
+                    </label>
+                  </div>
                 </div>
               </div>
             </fieldset>
@@ -268,8 +276,9 @@
             <li class="footer-navigation__user-item">
               <a href="#" class="footer-navigation__login-link footer-link--light">Валентин Петухов</a>
             </li>
-            <li class="footer-navigation__user-item">
-              <a href="#" class="footer-navigation__logout-link footer-link--light">Выйти</a>
+            <li class="footer-navigation__user-item footer-navigation__user-item--empty">
+              <a href="#"
+                class="footer-navigation__logout-link footer-link--light">Выйти</a>
             </li>
           </ul>
           <ul class="footer-navigation__shop">
